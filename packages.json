@@ -1,0 +1,16 @@
+{
+    "packages": {
+    	 "leafr/core": {
+            "dev-master": { @composer.json }
+        },
+        "leafr/commerce": {
+            "dev-master": { @composer.json }
+        },
+        "leafr/blogging": {
+            "dev-master": { @composer.json }
+        },
+        "leafr/portfolio": {
+            "dev-master": { @composer.json }
+        }
+    }
+}

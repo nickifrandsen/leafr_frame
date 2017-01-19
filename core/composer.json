@@ -23,8 +23,8 @@
       "psr-4": {
         "Leafr\\Core\\": "src"
         },
-        "files": [
-            "src/Support/functions.php"
-        ]
+      "files": [
+          "src/Support/functions.php"
+      ]
     }
 }

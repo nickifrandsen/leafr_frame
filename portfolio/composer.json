@@ -1,0 +1,21 @@
+{
+    "name": "leafr/Portfolio",
+    "description": "Packages for portfolio.",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Nicki Frandsen",
+            "email": "nf@nickifrandsen.dk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "intervention/image": "~2.3",
+      "graham-campbell/markdown": "^6.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Leafr\\Portfolio\\": "src"
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.btn, 
+#{$all-buttons} {
+  appearance: none;
+  background-color: white;
+  border: $base-border;
+  border-radius: $base-border-radius; 
+  color: $base-font-color;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: $small-spacing $base-spacing;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+    > div {
+        // Fix for button elements as they cannot be flex containers
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+  &:hover,
+  &:focus {
+    background-color: $light-gray;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+
+  &.is-wide {
+      width:100%;
+  }
+
+  &.is-large {
+    padding: $base-spacing $base-spacing;
+  }
+
+  &.is-white { 
+      background: white;  
+      color: $base-font-color;
+      border-color:transparent;
+
+      &:hover {
+          background: $light-gray;
+      }
+  }
+  &.is-success {
+      background:$green;
+
+      &:hover {
+          background:shade($green, 20%);
+      }
+  }
+  .icon-right {
+     padding:0 0 0 $small-spacing;
+     order: 1;
+  }
+
+  .icon-left {
+      padding:0 $small-spacing 0 0;
+      order:0;
+  }
+}

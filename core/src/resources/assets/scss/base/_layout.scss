@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  margin:0;
+}
+
+
+#app {
+    display:flex;
+    min-height:100%;
+
+    > .main-header {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex:0 0 $nav-width;
+
+        > header {
+            // background: linear-gradient(to bottom, $blue 0%, shade($blue, 30%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+            // box-shadow:inset -4px 0 4px -4px rgba(0,0,0,.1);
+
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            height: 100%;
+            width:$nav-width;
+            position: fixed;
+            padding:$base-spacing;
+
+            > a.brand {
+                padding:0;
+                display:block;
+                font-weight: 900;
+                color:$color-primary;
+                letter-spacing:4px;
+            }
+        }
+    }
+
+    > main {
+        display:flex;
+        flex-direction:column;
+    }
+
+     #content-main {
+        flex:1;
+    }
+}
+
+#content-header {
+    display:flex;
+    width: 100%;
+    padding: $base-spacing;
+    align-items: center;
+
+    * { margin-bottom: 0;  }
+
+    .page-title {
+        padding:$small-spacing 0; 
+        padding-right: $base-spacing;  
+        flex: 1;
+    }
+
+}
+
+#content-aside {
+    padding:$base-spacing;
+    display:flex;
+    flex-direction: column;
+    flex-basis:25%;
+}
+
+.flex {
+    display:flex;
+
+    &.is-row { flex-direction: row; }
+    &.is-column { flex-direction: column; }
+    &.align-middle { align-items:center; }
+}
+
+.is-primary {
+    flex:1;
+}
+
+.is-full-width {
+    width:100%;
+}
+
+
+.is-info { background: $color-info !important; color:$base-font-color; }
+.is-success { background: $color-success !important; }
+.is-warning { background: $color-warning !important; }
+.is-danger { background: $color-danger !important; }
+
+.is-success,
+.is-warning,
+.is-danger { color: white; }
+
+.is-info-text { color:$color-info; }
+.is-success-text { color: $color-success;}
+.is-warning-text { color: $color-warning;}
+.is-danger-text { color: $color-danger;}
+
+.has-margin {
+    margin:$small-spacing $base-spacing;
+}

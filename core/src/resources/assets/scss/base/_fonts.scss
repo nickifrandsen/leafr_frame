@@ -1,0 +1,51 @@
+@include font-face("Raleway", "../fonts/Raleway-Medium", ("ttf")) {
+  font-style: normal;
+  font-weight: 400;
+}
+@include font-face("Raleway", "../fonts/Raleway-SemiBold", ("ttf")) {
+  font-style: normal;
+  font-weight: 600;
+}
+@include font-face("Raleway", "../fonts/Raleway-Bold", ("ttf")) {
+  font-style: normal;
+  font-weight: 700;
+}
+@include font-face("Raleway", "../fonts/Raleway-Black", ("ttf")) {
+  font-style: normal;
+  font-weight: 900;
+}
+
+
+@include font-face("Material Icons", "../fonts/MaterialIcons-Regular", ("eot", "woff2", "woff", "truetype")) {
+       font-style: normal;
+       font-weight: 400;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: $base-icon-size;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
+}

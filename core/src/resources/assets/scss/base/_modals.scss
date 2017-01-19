@@ -1,0 +1,124 @@
+.is-clipped { overflow: hidden !important; }
+
+.modal {
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1999;
+
+
+    &.is-active { display: flex; }
+
+
+    .modal-background {
+
+        background-color: rgba(10, 10, 10, 0.86);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+
+    .modal-content {
+        background: white;
+        border-radius: $base-border-radius;
+        overflow: auto;
+        position: relative;
+        margin: 0 auto;
+        padding: $base-spacing;
+
+        max-height: calc(100vh - 40px);
+        width: 100%;
+
+        @media screen and (min-width: $medium-screen) {
+            max-height: calc(100vh - 160px);
+            max-width: 80%;
+        }
+
+        @media screen and (min-width: $large-screen) {
+            max-height: calc(100vh - 160px);
+            max-width: 60%;
+            width:auto;
+        }
+
+    }
+
+
+    &.is-card {
+        .modal-content {
+
+            display: flex;
+            flex-direction: column;
+            padding:0;
+
+            > header {
+                border-bottom: $base-border;
+                display: flex;
+
+                .modal-title {
+                    flex: 1;
+                    margin:$small-spacing 0;
+                }
+                .modal-close {
+                    color: $base-font-color;
+
+                    &:hover {
+                        background: $light-gray;
+                    }
+                }
+            }
+
+            > main {
+                flex: 1;
+                background-color: white;
+                overflow: auto;
+                padding:$base-spacing;
+            }
+
+            > footer {
+                border-top: $base-border;
+            }
+
+            > header,
+            > footer {
+                padding:$small-spacing $base-spacing;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+        }
+    }
+
+
+    > .modal-close {
+        top: $base-spacing;
+        right: $base-spacing;
+        position: fixed;
+
+        i {
+            font-size:2rem;
+        }
+
+        &:hover {
+            color: rgba(255,255,255,.8);
+            background: rgba(255,255,255,.1);
+        }
+    }
+
+    .modal-close {
+        color: white;
+        background: transparent;
+        border: none;
+        border-radius: 50%;
+        padding: $small-spacing;
+    }
+}

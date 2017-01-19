@@ -1,0 +1,25 @@
+.notification {
+
+    display: flex;
+    padding: $base-spacing;
+    position: relative;
+    border-radius: $base-border-radius;
+
+    .close {
+    
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(0,0,0,.1);
+        color: white;
+        padding: $small-spacing/3;
+        border-radius: $base-border-radius;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border: none;
+
+        &:hover { background: rgba(0,0,0,.2); }
+    
+    }
+
+}

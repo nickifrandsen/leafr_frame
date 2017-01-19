@@ -1,0 +1,30 @@
+{
+    "name": "leafr/core",
+    "description": "Packages for backoffice with blogging and ecommerce support.",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Nicki Frandsen",
+            "email": "nf@nickifrandsen.dk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "intervention/image": "~2.3",
+      "ddeboer/data-import": "0.18.*",
+      "graham-campbell/markdown": "^6.0",
+      "cartalyst/sentinel": "2.0.*",
+      "barryvdh/laravel-snappy": "^0.3.0",
+      "h4cc/wkhtmltopdf-i386": "0.12.3",
+      "guzzlehttp/guzzle": "~6.0",
+      "drewm/mailchimp-api": "^2.2"
+    },
+    "autoload": {
+      "psr-4": {
+        "Leafr\\Core\\": "src"
+        },
+        "files": [
+            "src/Support/functions.php"
+        ]
+    }
+}

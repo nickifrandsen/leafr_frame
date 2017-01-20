@@ -6,4 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Knp\\Snappy' => array($vendorDir . '/knplabs/knp-snappy/src'),
+    'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
+    'Ddeboer\\DataImport' => array($vendorDir . '/ddeboer/data-import/src'),
 );
